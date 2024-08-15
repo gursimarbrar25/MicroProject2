@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Main Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="order.html">Order Online</a> |
+            <a href="https://www.subway.com" target="_blank">Official Subway Site</a> |
+            <a href="https://www.subway.com" target="_blank">Menu</a>
+        </nav>
+    </header>
+    <main id="app"> 
+        <h1>{{ title }}</h1>
+        <p>{{ mainPara }}</p>
+        <p>At Subway, we pride ourselves on providing fresh and customizable sandwiches tailored to your taste. Whether you're looking for a hearty lunch or a light snack, we have a variety of options to satisfy your cravings</p>
+        <p>Explore our wide range of sandwiches, salads, and more. Our ingredients are sourced to ensure the highest quality and freshness. Visit our menu to discover new favorites and build your perfect meal.</p>
+        <button @click="showMessage">Click Me</button>
+        <button @click="goToMenu">View Our Menu</button>
+    </main>
+    <footer>
+        <span>&copy; 2024 Subway. All rights reserved. | <a href="https://www.subway.ca/">Visit Subway</a></span>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./jsfiles/index.js"></script>
+</body>
+</html>

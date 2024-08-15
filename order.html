@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online</title>
+    <link rel="stylesheet" href="styles/order.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="order.html">Order Online</a> |
+            <a href="https://www.subway.com" target="_blank">Official Subway Site</a> |
+            <a href="https://www.subway.com/en-us/menu" target="_blank">Menu</a>
+        </nav>
+    </header>
+    <main id="app">
+        <h1>{{ pageTitle }}</h1>
+        <p>{{ orderText }}</p>
+        <p>Ordering online is quick and easy. Customize your drinks, choose your favorite ingredients, and place your order from the comfort of your home. We ensure your order is prepared fresh and delivered promptly.</p>
+        <p>Start your order now and enjoy our delicious food options made just the way you like them. Don't forget to check out our special offers and promotions!</p>
+        <button @click="placeOrder">Place Order</button>
+        <button @click="goToSubway">Go to Subway Website</button>
+    </main>
+    <footer>
+        <span>&copy; 2024 Subway. All rights reserved. | <a href="https://www.subway.com/en-us/menu">Visit Subway</a></span>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./jsfiles/Dorder.js"></script>
+</body>
+</html>
